@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Transitions</title>
+		<style media="screen">
+		body {
+			margin:0;
+
+		}
+			#topmenu {
+				line-height: 0;
+				width:100%;
+				opacity: 0;
+				background-color: black;
+				color:white;
+				z-index:-1000;
+				padding: 1em;
+				position: absolute;
+				margin:0;
+				transition: opacity 0.3s,
+										line-height 0.2s;
+				transition-timing-function: ease-out;
+			}
+
+			#topmenu li {
+				padding-left:1em;
+				margin-left: 1em;
+			}
+
+			#topmenu:target {
+				top:0;
+				z-index: 1000;
+				opacity: 1;
+				line-height: 1.4;
+				transition: line-height 0.2s,
+										opacity 0.3s;
+				transition-timing-function: ease-in;
+			}
+		</style>
+
+
+	</head>
+	<body>
+				<ul class="top menu" id="topmenu">
+					<li><a href="#!">Lenke</a></li>
+					<li><a href="#!">Lenke</a></li>
+					<li><a href="#!">Lenke</a></li>
+					<li><a href="#!">Lenke</a></li>
+					<li><a href="#!">Lenke</a></li>
+					<li><a href="#!">Lenke</a></li>
+					<li><a href="#!">Lukk</a></li>
+				</ul>
+		<a href="#topmenu">Åpne menyen</a>
+	</body>
+</html>
