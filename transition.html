@@ -6,8 +6,26 @@
 		<style media="screen">
 		body {
 			margin:0;
+			background-color: grey;
 
 		}
+		a.open:link, a.open:visited {color:black;}
+		a:link, a:visited {
+			color:white;
+		}
+		.button {
+			padding:8px 16px;
+			background-color: black;
+			transition: all 0.3s;
+
+		}
+
+		.button:hover {
+			background-color: white;
+			color:black;
+			transition: all 1s;
+		}
+
 			#topmenu {
 				line-height: 0;
 				width:100%;
@@ -51,6 +69,9 @@
 					<li><a href="#!">Lenke</a></li>
 					<li><a href="#!">Lukk</a></li>
 				</ul>
-		<a href="#topmenu">Åpne menyen</a>
+		<a href="#topmenu" class="open">Åpne menyen</a>
+
+		<a href="lesmer.html" class="button">
+			<img src="bilder/google-logo.png" alt=""> les mer</a>
 	</body>
 </html>
