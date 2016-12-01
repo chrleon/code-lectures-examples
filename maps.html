@@ -12,13 +12,17 @@
     <h3>My Google Maps Demo</h3>
     <div id="map"></div>
     <script>
-			var options =
-				// paste inn kode fra snazzymaps her
-				
+		var _latitude = 60.386063;
+		var _longitude = 5.327418;
+			// legg inn koden fra snazzymaps inni options
+			// koden skal se ut som var options = [{kode fra snazzymaps}];
+			var options = [{}];
+
 
 
       function initMap() {
-        var uluru = {lat: 60.386063, lng: 5.327418};
+
+        var uluru = {lat: _latitude, lng: _longitude };
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
           center: uluru,
